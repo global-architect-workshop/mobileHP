@@ -46,8 +46,9 @@
 <link href="css/owl.carousel.css" rel="stylesheet">
 <script src="js/owl.carousel.js"></script>
 		<script>
+            
 			$(document).ready(function() {
-
+                
 				$("#owl-demo").owlCarousel({
 					items : 4,
 					lazyLoad : true,
@@ -61,7 +62,10 @@
 				});
 
 			});
-		</script>
+
+            // safariの戻るボタン対応
+            window.onunload = function(){};
+        </script>
 		<!-- //Owl Carousel Assets -->
 
 <!----font-Awesome----->
